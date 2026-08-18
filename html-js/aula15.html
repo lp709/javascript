@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function negativeAndPossitive() {
+            const n1 = Number(prompt("Digite um numero"));
+            if (isNaN(n1)) {
+                console.log('Só Pode digitar numeros');
+            } else if (n1 > 0) {
+                console.log('numero possitivo')
+            } else if (n1 === 0) {
+                console.log('Zero')
+            } else if (n1 < 0) {
+                console.log('Número Negativo')
+            } else {
+                console.log('Tente novamente')
+            }
+        }
+
+        negativeAndPossitive()
+    </script>
+</body>
+
+</html>

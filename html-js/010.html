@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="if/else">
+    <meta name="description" content="if/else">
+    <title>Aula 010 - if/else</title>
+    <style>
+        section.secOne {
+            padding: 20px;
+            width: 600px;
+            height: 200px;
+            margin: 70px auto 0px auto;
+            border: 1px solid black;
+            border-radius: 20px;
+            text-align: center;
+            background-color: rgba(127, 255, 212, 0.404);
+        }
+
+        div.TheH1 {
+            text-align: center;
+            font-family: sans-serif;
+        }
+
+        section.secTwo {
+            font-family: sans-serif;
+        }
+
+
+        label {
+            font-weight: 600;
+        }
+
+        p.Question {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        button {
+            display: block;
+            margin: 40px auto 0px auto;
+            font-size: 20px;
+            padding: 5px;
+            width: 200px;
+            background: blue;
+            color: white;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="TheH1">
+            <h1>Hora de Trivia</h1>
+        </div>
+        <section class="secOne">
+
+            <section class="secTwo">
+                <form action="">
+                    <p class="Question">Um desses 2 pintores nasceu na espanha, Adivinha quem.</p>
+                    <input type="radio" id="r1" name="pintor" value="picasso">
+                    <label for="r1">Picasso</label>
+                    <br><br>
+                    <input type="radio" id="r2" name="pintor" value="matisse">
+                    <label for="r2">Matisse</label>
+                    <button type="button" onclick="validar()">Validar</button>
+                </form>
+                <br>
+                <p class="resultado"></p>
+            </section>
+
+        </section>
+    </main>
+    <script>
+        function validar() {
+            const picasso = document.querySelector('#r1');
+            const matisse = document.querySelector('#r2');
+            const mensagem = document.querySelector('.resultado');
+
+            if (picasso.checked) {
+                mensagem.innerHTML = '<span style="color: green;">Correto 👌!!</span>';
+            }
+
+            else if (matisse.checked) {
+                mensagem.innerHTML = '<span style="color: red;">Oh meu Deus voce e muito burro 😂!!</span>';
+            }
+
+            else{
+                mensagem.innerHTML = '<span style="color: orange;">Escolha uma opção!!</span>';
+            }
+        }
+    </script>
+</body>
+
+</html>

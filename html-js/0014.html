@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let idade = prompt("Qual e a sua idade?");
+        let idadeN = Number(idade);
+
+        if (idade >= 18 && idadeN < 100 ) {
+            window.alert("Voce e maior de idade.");
+            document.body.innerHTML = `<span style="color: green; font-weight: bold">${idade}</span> anos.`
+        }
+        else if (idade > 100 && idade === 0 && idade === null) {
+            window.alert("Idade Invalida");
+        }
+        else if(isNaN(idadeN)) {
+            window.alert("Digite apenas numeros");
+        }
+        else if (!Number.isInteger(idadeN)) {
+            window.alert("Digite apenas numeros sem pontos ou virgulas")
+        }
+        else {
+            window.alert("voce e menor de idade.");
+            document.body.innerHTML = `<span style="color: red; font-weight: bold;">${idade}</span>`
+        }
+    </script>
+</body>
+
+</html>

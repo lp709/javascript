@@ -1,1 +1,3 @@
-//1. operadores aritimeticos
+console.log("Operadores aritimeticos");
+
+console.log("+; -; /; *; %;")

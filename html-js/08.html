@@ -1,29 +1,26 @@
-<!DOCTYPE html>
-	<html lang="pt-PT">
+<!doctype html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Keywords" content="Logica js" />
+    <meta name="description" content="Logica js" />
+    <title>Aula 08 - Logica de Programacao</title>
+  </head>
 
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="Keywords" content="Logica js">
-		<meta name="description" content="Logica js">
-		<title>Aula 08 - Logica de Programacao</title>
+  <body>
+    <h1>Olá</h1>
+    <button onclick="hi()">English</button>
 
-	</head>
+    <script>
+      function hi() {
+        let number = 5 > 2 && 2 < 5;
+        const mensagem = "Hello there";
 
-		<body>
-			<h1>Olá</h1>
-			<button onclick="hi()">English</button>
-
-			<script>
-				function hi() {
-					let number = (5 > 2) && (2 < 5);
-					const mensagem = "Hello there"
-
-					if (number === true) {
-						document.querySelector("h1").innerHTML = mensagem;
-					}
-				}
-			</script>
-		</body>
-
-	</html>
+        if (number === true) {
+          document.querySelector("h1").innerHTML = mensagem;
+        }
+      }
+    </script>
+  </body>
+</html>

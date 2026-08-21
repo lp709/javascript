@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>017</title>
+
+    <Style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .main section {
+            border: 1px solid black;
+            margin: 100px auto 0px auto;
+            border-radius: 6px;
+            padding: 20px;
+            width: 20%;
+            height: 500px;
+        }
+
+        .info {
+            margin-top: 10px;
+            padding: 10px;
+            overflow: scroll;
+        }
+
+        .info #input {
+            padding: 4px;
+            width: 100%;
+        }
+
+        .info .result {
+            margin-top: 5px;
+            padding: 5px;
+        }
+
+        .info .message {
+            margin-bottom: 15px;
+        }
+    </Style>
+</head>
+
+<body>
+
+    <main class="main">
+        <section>
+            <div class="info">
+
+                <p class="message">Conversor de nomes para letras maisculas</p>
+
+                <input type="text" name="name" id="input" placeholder="type your name" oninput="up()" required>
+
+                <p class="result"></p>
+
+            </div>
+        </section>
+    </main>
+
+    <script>
+
+        const input = document.querySelector('#input');
+        const button = document.querySelector('.button');
+        const result = document.querySelector('.result');
+
+        function up() {
+
+            if (input.value === "") {
+                result.innerHTML = "";
+                return;
+            }
+
+            const nome = input.value.toUpperCase();
+            result.innerHTML = nome;
+
+        }
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>018</title>
+
+    <style>
+        * {
+
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+
+        }
+
+        .main {
+
+            width: 500px;
+            height: 500px;
+            padding: 20px;
+            margin: 75px auto 0px auto;
+            border: 1px solid black;
+            border-radius: 6px;
+
+        }
+
+        .sec {
+
+            padding: 10px;
+            height: 50%;
+            margin-top: 125px;
+
+        }
+
+        .mid {
+
+            margin: 40px auto 0px auto;
+            width: 300px;
+            height: 100px;
+        }
+
+        .message {
+            font-size: 20px;
+            font-family: sans-serif;
+            margin-top: -50px;
+        }
+
+
+        .number {
+
+            margin-bottom: 20px;
+            display: block;
+            text-align: center;
+            font-size: 30px;
+
+        }
+
+        .button_1 {
+
+            padding: 5px;
+            margin-left: 2px;
+            margin-right: 90px;
+            width: 100px;
+
+        }
+
+        .button_2 {
+
+            padding: 5px;
+            width: 100px;
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <main class="main">
+
+        <div class="sec">
+
+            <p class="message">Use o butao para aumentar ou diminuir o valor</p>
+
+            <div class="mid">
+
+
+
+                <span class="number">0</span>
+
+                <button class="button_1">+ 1</button>
+
+                <button class="button_2">- 1</button>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <script>
+
+        let num = document.querySelector('.number');
+        const button1 = document.querySelector('.button_1');
+        const button2 = document.querySelector('.button_2');
+        let count = 0;
+
+        button1.addEventListener('click', () => {
+            count++;
+            num.innerText = count;
+        });
+
+        button2.addEventListener('click', () => {
+            count--;
+            num.innerText = count;
+        })
+
+    </script>
+
+</body>
+
+</html>

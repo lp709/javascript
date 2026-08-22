@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>020</title>
+
+    <style>
+        * {
+
+            box-sizing: border-box;
+
+        }
+
+        body {
+
+            padding: 0px;
+            margin: 0px;
+
+        }
+
+        .main {
+
+            border: 1px solid black;
+            margin: 50px auto 0px auto;
+            width: 50%;
+            height: 300px;
+            padding: 20px;
+
+        }
+
+        .main .message {
+
+            font-family: sans-serif;
+            font-size: 20px;
+            text-align: center;
+
+        }
+
+        .main .content {
+
+            border: 1px solid black;
+            padding: 10px;
+            margin-top: 50px;
+
+        }
+
+        .main .p_parent {
+
+            display: flex;
+            font-size: 20px;
+
+        }
+
+        .main #input {
+
+            padding: 10px;
+
+        }
+
+        .main #input[placeholder] {
+
+            color: green;
+            font-size: 20px;
+
+        }
+
+        .p_parent .output {
+
+            margin-right: 10px;
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <main class="main">
+
+
+
+        <p class="message">Tudo que for escrito no input vai aparecer em minusculo no output</p>
+
+        <section class="content">
+
+            <input type="text" name="input" id="input" placeholder="Input">
+
+            <section class="p_parent">
+
+                <p class="output">Output:</p>
+                <p class="result"></p>
+
+            </section>
+
+        </section>
+
+    </main>
+
+    <script>
+
+        const input = document.querySelector('#input');
+        const result = document.querySelector('.result');
+
+
+        input.addEventListener('input', () => {
+
+            const lower = input.value.toLowerCase();
+            result.textContent = lower;
+
+        });
+
+    </script>
+
+</body>
+
+</html>

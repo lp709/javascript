@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>019</title>
+
+    <style>
+        body {
+
+            background-color: rgba(100, 100, 100, 0.418);
+
+        }
+
+        .main {
+
+            width: 200px;
+            height: 100px;
+            margin: 300px auto 0px auto;
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <main class="main">
+
+        <input class="input" type="text" placeholder="Escreva algo...">
+
+        <p class="p"></p>
+
+    </main>
+
+    <script>
+
+        const p = document.querySelector('.p');
+        const input = document.querySelector('.input');
+
+        input.addEventListener('input', () => {
+            p.innerText = input.value;
+        });
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>021</title>
+
+    <style>
+        * {
+
+            box-sizing: border-box;
+
+        }
+
+        body {
+
+            margin: 0px;
+            padding: 0px;
+
+        }
+
+        .main {
+
+            width: 400px;
+            margin: 280px auto 0px auto;
+
+        }
+
+        .main .content {
+
+            display: flex;
+            padding: 20px;
+            margin: 0 auto 0 auto;
+            width: 265px;
+
+        }
+
+        .content .button_1 {
+
+            margin-right: 5px;
+            font-size: 20px;
+        }
+
+        .content .button_2 {
+
+            font-size: 20px;
+
+        }
+
+        .button_1,
+        .button_2 {
+
+            background-color: white;
+            border-radius: 6px;
+            height: 40px;
+
+        }
+        
+    </style>
+
+</head>
+
+<body>
+
+    <main class="main">
+
+        <section class="content">
+
+            <button type="button" class="button_1">Green Color</button>
+            <button type="button" class="button_2">Refresh</button>
+
+        </section>
+
+    </main>
+
+    <script>
+
+        const b1 = document.querySelector('.button_1');
+        const b2 = document.querySelector('.button_2');
+
+        b1.addEventListener('click', () => {
+
+            document.body.style.backgroundColor = 'green';
+
+            b1.style.backgroundColor = 'green';
+            b1.style.color = 'white';
+            b1.style.borderColor = 'white';
+
+            b2.style.backgroundColor = 'green';
+            b2.style.color = 'white';
+            b2.style.borderColor = 'white';
+
+        });
+
+        b2.addEventListener('click', () => {
+
+            location.reload();
+
+        });
+
+    </script>
+
+</body>
+
+</html>

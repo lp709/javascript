@@ -8,17 +8,26 @@
     <title>019</title>
 
     <style>
-        body {
-
-            background-color: rgba(100, 100, 100, 0.418);
-
-        }
-
         .main {
 
             width: 200px;
             height: 100px;
             margin: 300px auto 0px auto;
+
+        }
+
+        .result {
+
+            color: red;
+            font-size: 20px;
+            text-align: center;
+
+        }
+
+        #input {
+
+            width: 150%;
+            height: 25%;
 
         }
     </style>
@@ -29,20 +38,22 @@
 
     <main class="main">
 
-        <input class="input" type="text" placeholder="Escreva algo...">
-
-        <p class="p"></p>
+        <input type="text" name="input" id="input" value="try yourself" />
+        <p class="result"></p>
 
     </main>
 
     <script>
 
-        const p = document.querySelector('.p');
-        const input = document.querySelector('.input');
+        const input = document.querySelector('#input');
+        const result = document.querySelector('.result');
 
         input.addEventListener('input', () => {
-            p.innerText = input.value;
-        });
+
+            const up = input.value.toUpperCase();
+            result.innerHTML = up;
+
+        })
 
     </script>
 

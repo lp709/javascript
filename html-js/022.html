@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>022</title>
+
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .main {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .form {
+            border-radius: 6px;
+            border: 1px solid black;
+            width: 400px;
+            height: 450px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .logo {
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            margin-bottom: 50px;
+        }
+
+        .inputs {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #user-name,
+        #password,
+        #button-send {
+            padding: 10px;
+            width: 300px;
+            border-radius: 6px;
+            border: 1px solid black;
+        }
+
+        #user-name {
+            margin-bottom: 15px;
+            outline: none;
+        }
+
+        #password {
+            outline: none;
+        }
+
+        #button-send {
+            margin-top: 50px;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <main class="main">
+
+        <section class="section-form">
+
+            <section class="form">
+
+                <section class="form-in">
+
+                    <section class="logo">
+
+                        <img src="" alt="logo">
+
+                    </section>
+
+                    <section class="inputs">
+
+                        <input type="text" name="username" id="user-name" placeholder="Enter your username" required
+                            autocomplete="given-name" />
+                        <input type="password" name="password" id="password" placeholder="Enter your password" required
+                            autocomplete="current-password" />
+
+                    </section>
+
+                    <section class="button">
+
+                        <input type="submit" value="Enviar" id="button-send" onclick="login()" />
+
+                    </section>
+
+                </section>
+
+            </section>
+
+        </section>
+
+    </main>
+
+    <script>
+
+        const inputUser = document.querySelector('#user-name');
+        const inputPassword = document.querySelector('#password');
+
+        const userKey = "admin";
+        const passKey = "admin";
+
+        function login() {
+
+            const userValue = inputUser.value;
+            const passwordValue = inputPassword.value;
+
+            if (userValue === userKey && passwordValue === passKey) {
+                return alert("welcome back");
+            } else {
+                return alert("username or password is wrong");
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>nothing1</title>
+
+  <style>
+    .myH1 {
+      color: green;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <h1 class="myH1"></h1>
+  <h1 class="myH2"></h1>
+
+  <button class="myBtn">If you are not happy click me</button>
+
+  <script>
+
+    let myH1 = document.querySelector(".myH1");
+    let myH2 = document.querySelector(".myH2");
+    let myBtn = document.querySelector(".myBtn");
+
+    let name = window.prompt('What is your name?');
+
+    while (!name) {
+      name = window.prompt('What is your name?');
+    }
+
+    name = name.toUpperCase();
+
+    window.alert(`Welcome, ${name}`);
+
+    const ontem = `${name}, are good right?`;
+
+    myH1.innerHTML = ontem;
+    myH2.innerHTML = `I am happy today, ${name} are you happy too?`;
+
+    myBtn.addEventListener('click', () => {
+      window.prompt("Why you are not happy");
+      window.alert("Bro Fuck yourself");
+    });
+
+  </script>
+</body>
+
+</html>

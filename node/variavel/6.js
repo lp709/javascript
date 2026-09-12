@@ -6,7 +6,6 @@ name = "Leandro";
 add = "Street Gabriel Francisco";
 country = "USA";
 
-
 let info = [   
     // FORMA MAIS DIFICIL
 {

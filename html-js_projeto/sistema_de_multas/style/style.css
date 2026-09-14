@@ -1,0 +1,43 @@
+*,
+*::before,
+*::after {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100dvh;
+}
+
+.main {
+    border: 1px solid black;
+    height: 50dvh;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 0px 10px;
+}
+
+.content {
+    flex-direction: column;
+    display: flex;
+
+    label {
+        text-align: center;
+    }
+
+    input {
+        margin-right: 5px;
+    }
+
+}
+
+.input-area {
+    margin-top: 10px;
+    display: flex;
+}

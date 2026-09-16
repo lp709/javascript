@@ -39,5 +39,13 @@ body {
 
 .input-area {
     margin-top: 10px;
+    margin-bottom: 10px;
     display: flex;
+}
+
+.message {
+    border: 1px solid black;
+    width: 370px;
+    height: 30px;
+    padding: 5px;
 }

@@ -21,5 +21,3 @@ ver.addEventListener('click', () => {
     }
 
 });
-
-///////////

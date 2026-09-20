@@ -2,32 +2,32 @@ let country = [
     {
         "id": "pt-PT",
         "pais": "Portugal",
-        "nacionalidade": "Portuges"
+        "nacionalidade": "Portuguesa"
     },
     {
         "id": "pt-BR",
         "pais": "Brazil",
-        "nacionalidade": "Brazileiro"
+        "nacionalidade": "Brazileira"
     },
     {
         "id": "es-ES",
         "pais": "Espanha",
-        "naciolidade": "Espanhol"
+        "naciolidade": "Espanhola"
     },
     {
         "id": "fr-FR",
         "pais": "Franca",
-        "nacionalidade": "Frances"
+        "nacionalidade": "Francesa"
     },
     {
         "id": "en-US",
         "pais": "Estados Unidos De America",
-        "nacionalidade": "Americano"
+        "nacionalidade": "Americana"
     },
     {
         "id": "en-UK",
         "pais": "Reino Unido",
-        "nacionalidade": "Ingles"
+        "nacionalidade": "Inglesa"
     }
 ]
 

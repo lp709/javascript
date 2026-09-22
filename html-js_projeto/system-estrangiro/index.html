@@ -5,15 +5,32 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema de estrageiro</title>
+    <style>
+        *, *::before, *::after {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100dvh;
+        }
+    </style>
 </head>
 
 <body>
 
     <main class="main">
 
-        <p>some content</p>
+        <input type="text" style="width: 500px; padding: 10px; border-radius: 10px; border: 1px solid black; outline: none;" name="search" id="input" placeholder="se voce precisa de ajuda escreva 'comandos' ou 'word'">
 
-        <input type="text" name="search" id="input">
+        <section class="resultado">
+
+            <p class="result"></p>
+
+        </section>
 
     </main>
 

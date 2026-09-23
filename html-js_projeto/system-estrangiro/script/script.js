@@ -47,7 +47,6 @@ let country = [
 ];
 
 search.addEventListener('input', () => {
-
     if (search.value == "") {
         result.innerHTML = "";
     }
@@ -78,7 +77,7 @@ search.addEventListener('input', () => {
         Codigo De Lingua: ${country[0].id}
         `;
     }
-    else if(search.value == "word" || search.value == "comandos") {
+    else if (search.value == "word" || search.value == "comandos") {
         result.innerHTML = `
         word ou Comandos precisos: <br>
         ${country[0].nome}<br>

@@ -111,9 +111,21 @@ search.addEventListener('input', () => {
             Codigo De Pais: ${country[4].id}
         `;
     }
+    else if(search.value == country[5].nome || search.value == country[5].pais) {//carlos
+        result.innerHTML = `
+            Nome: ${country[5].nome}<br>
+            Pais: ${country[5].pais}<br>
+            Nacionalidade: ${country[5].nacionalidade}<br>
+            Codigo De Pais: ${country[5].id}
+        `;
+    }
     else if (search.value == "word" || search.value == "comandos") {
         result.innerHTML = `
-        word ou Comandos precisos: <br>
+        <span style="color: red; font-size: 20px">
+        <strong>
+        word ou comandos que voce possa precissar: 
+        </strong>
+        </span><br>
         ${country[0].nome}<br>
         ${country[1].nome}<br>
         ${country[2].nome}<br>
@@ -126,7 +138,9 @@ search.addEventListener('input', () => {
     else {
         let pais = country.map(item => item.pais);
         result.innerHTML = `
-        <span style="color: red;">Tente isso</span><br>
+        <span style="color: red; font-size: 20px">
+        <strong>Tente isso</strong>
+        </span><br>
         ${pais.join('<br>')};
         `;
     }

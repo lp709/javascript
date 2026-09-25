@@ -44,7 +44,8 @@ let country = [
     }
 ];
 
-let ed = country.map(item => item.nome)
+//let ed = country.map(item => item.nome)
+let ed = console.log("Ola mundo")
 console.log(ed)
 
 //console.log(country);

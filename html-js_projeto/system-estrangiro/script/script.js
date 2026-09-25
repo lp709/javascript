@@ -1,3 +1,5 @@
+//Proxima Atualizacao: acabar de meter meter os nomes no frontend, e atualizar o os objects com=ex: "idade": 15,
+
 let search = document.querySelector('#input');
 let result = document.querySelector('.result');
 
@@ -69,12 +71,44 @@ search.addEventListener('input', () => {
         let nomes = country.map(item => item.nome);
         result.innerHTML = nomes.join('<br>');
     }
-    else if (search.value == country[0].nome || search.value == country[0].pais) {
+    else if (search.value == country[0].nome || search.value == country[0].pais) {//Evaldo
         result.innerHTML = `
         Nome: ${country[0].nome}<br>
         Pais: ${country[0].pais}<br>
         Nacionalidade: ${country[0].nacionalidade}<br>
         Codigo De Lingua: ${country[0].id}
+        `;
+    }
+    else if (search.value == country[1].nome || search.value == country[1].pais) {//Esmy
+        result.innerHTML = `
+        Nome: ${country[1].nome}<br>
+        Pais: ${country[1].pais}<br>
+        Nacionalidade: ${country[1].nacionalidade}<br>
+        Codigo De Lingua: ${country[1].id}
+        `;
+    }
+    else if (search.value == country[2].nome || search.value == country[2].pais) {//Leandro
+        result.innerHTML = `
+            Nome: ${country[2].nome}<br>
+            Pais: ${country[2].pais}<br>
+            Nacionalidade: ${country[2].nacionalidade}<br>
+            Codigo De Lingua: ${country[2].id}
+        `;
+    }
+    else if(search.value == country[3].nome || search.value == country[3].pais){//Beatriz
+        result.innerHTML = `
+            Nome: ${country[3].nome}<br>
+            Pais: ${country[3].pais}<br>
+            Nacionalidade: ${country[3].nacionalidade}<br>
+            Codigo De Pais: ${country[3].id}
+        `;
+    }
+    else if(search.value == country[4].nome || search.value == country[4].pais){//Vando
+        result.innerHTML = `
+            Nome: ${country[4].nome}<br>
+            Pais: ${country[4].pais}<br>
+            Nacionalidade: ${country[4].nacionalidade}<br>
+            Codigo De Pais: ${country[4].id}
         `;
     }
     else if (search.value == "word" || search.value == "comandos") {
@@ -92,7 +126,7 @@ search.addEventListener('input', () => {
     else {
         let pais = country.map(item => item.pais);
         result.innerHTML = `
-        <span style="color: red;">Tente isso <br></span> 
+        <span style="color: red;">Tente isso</span><br>
         ${pais.join('<br>')};
         `;
     }

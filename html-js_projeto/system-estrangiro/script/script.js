@@ -6,42 +6,49 @@ let result = document.querySelector('.result');
 let country = [
     {
         "id": "pt-PT",
+        "idade": 9,
         "nome": "Edvaldo",
         "pais": "Portugal",
         "nacionalidade": "Portuguesa"
     },
     {
         "id": "pt-BR",
+        "idade": 18,
         "nome": "Esmy",
         "pais": "Brazil",
         "nacionalidade": "Brazileira"
     },
     {
         "id": "es-ES",
+        "idade": 17,
         "nome": "Leandro",
         "pais": "Espanha",
         "nacionalidade": "Espanhola"
     },
     {
         "id": "fr-FR",
+        "idade": 38,
         "nome": "Beatriz",
         "pais": "Franca",
         "nacionalidade": "Francesa"
     },
     {
         "id": "en-US",
+        "idade": 36,
         "nome": "Vando",
         "pais": "Estados Unidos De America",
         "nacionalidade": "Americana"
     },
     {
         "id": "stp-PT",
+        "idade": 15,
         "nome": "Carlos",
         "pais": "Sao Tome E Principe",
         "nacionalidade": "Saotomense"
     },
     {
         "id": "en-UK",
+        "idade": 17,
         "nome": "Francisco",
         "pais": "Reino Unido",
         "nacionalidade": "Inglesa"
@@ -74,6 +81,7 @@ search.addEventListener('input', () => {
     else if (search.value == country[0].nome || search.value == country[0].pais) {//Evaldo
         result.innerHTML = `
         Nome: ${country[0].nome}<br>
+        idade: ${country[0].idade}<br>
         Pais: ${country[0].pais}<br>
         Nacionalidade: ${country[0].nacionalidade}<br>
         Codigo De Lingua: ${country[0].id}
@@ -90,6 +98,7 @@ search.addEventListener('input', () => {
     else if (search.value == country[2].nome || search.value == country[2].pais) {//Leandro
         result.innerHTML = `
             Nome: ${country[2].nome}<br>
+            Idade: ${country[2].idade}<br>
             Pais: ${country[2].pais}<br>
             Nacionalidade: ${country[2].nacionalidade}<br>
             Codigo De Lingua: ${country[2].id}
@@ -98,6 +107,7 @@ search.addEventListener('input', () => {
     else if(search.value == country[3].nome || search.value == country[3].pais){//Beatriz
         result.innerHTML = `
             Nome: ${country[3].nome}<br>
+            idade: ${country[3].idade}<br>
             Pais: ${country[3].pais}<br>
             Nacionalidade: ${country[3].nacionalidade}<br>
             Codigo De Pais: ${country[3].id}
@@ -106,6 +116,7 @@ search.addEventListener('input', () => {
     else if(search.value == country[4].nome || search.value == country[4].pais){//Vando
         result.innerHTML = `
             Nome: ${country[4].nome}<br>
+            idade: ${country[4].idade}<br>
             Pais: ${country[4].pais}<br>
             Nacionalidade: ${country[4].nacionalidade}<br>
             Codigo De Pais: ${country[4].id}
@@ -114,6 +125,7 @@ search.addEventListener('input', () => {
     else if(search.value == country[5].nome || search.value == country[5].pais) {//carlos
         result.innerHTML = `
             Nome: ${country[5].nome}<br>
+            Idade: ${country[5].idade}<br>
             Pais: ${country[5].pais}<br>
             Nacionalidade: ${country[5].nacionalidade}<br>
             Codigo De Pais: ${country[5].id}

@@ -1,4 +1,5 @@
-//Proxima Atualizacao: acabar de meter meter os nomes no frontend, e atualizar o os objects com=ex: "idade": 15,
+//Add user Pedro
+//Meter user francisco no front end
 
 let search = document.querySelector('#input');
 let result = document.querySelector('.result');
@@ -9,49 +10,56 @@ let country = [
         "idade": 9,
         "nome": "Edvaldo",
         "pais": "Portugal",
-        "nacionalidade": "Portuguesa"
+        "nacionalidade": "Portuguesa",
+        "continente": "Europa"
     },
     {
         "id": "pt-BR",
         "idade": 18,
         "nome": "Esmy",
         "pais": "Brazil",
-        "nacionalidade": "Brazileira"
+        "nacionalidade": "Brazileira",
+        "continente": "America"
     },
     {
         "id": "es-ES",
         "idade": 17,
         "nome": "Leandro",
         "pais": "Espanha",
-        "nacionalidade": "Espanhola"
+        "nacionalidade": "Espanhola",
+        "continente": "Europa"
     },
     {
         "id": "fr-FR",
         "idade": 38,
         "nome": "Beatriz",
         "pais": "Franca",
-        "nacionalidade": "Francesa"
+        "nacionalidade": "Francesa",
+        "continente": "Europa"
     },
     {
         "id": "en-US",
         "idade": 36,
         "nome": "Vando",
         "pais": "Estados Unidos De America",
-        "nacionalidade": "Americana"
+        "nacionalidade": "Americana",
+        "continente": "America"
     },
     {
         "id": "stp-PT",
         "idade": 15,
         "nome": "Carlos",
         "pais": "Sao Tome E Principe",
-        "nacionalidade": "Saotomense"
+        "nacionalidade": "Saotomense",
+        "continente": "Africa"
     },
     {
         "id": "en-UK",
         "idade": 17,
         "nome": "Francisco",
         "pais": "Reino Unido",
-        "nacionalidade": "Inglesa"
+        "nacionalidade": "Inglesa",
+        "continente": "Europa"
     }
 ];
 
@@ -84,7 +92,8 @@ search.addEventListener('input', () => {
         idade: ${country[0].idade}<br>
         Pais: ${country[0].pais}<br>
         Nacionalidade: ${country[0].nacionalidade}<br>
-        Codigo De Lingua: ${country[0].id}
+        Codigo De Lingua: ${country[0].id}<br>
+        Continente: ${country[0].continente}
         `;
     }
     else if (search.value == country[1].nome || search.value == country[1].pais) {//Esmy
@@ -92,7 +101,8 @@ search.addEventListener('input', () => {
         Nome: ${country[1].nome}<br>
         Pais: ${country[1].pais}<br>
         Nacionalidade: ${country[1].nacionalidade}<br>
-        Codigo De Lingua: ${country[1].id}
+        Codigo De Lingua: ${country[1].id}<br>
+        Continente: ${country[1].continente}
         `;
     }
     else if (search.value == country[2].nome || search.value == country[2].pais) {//Leandro
@@ -101,7 +111,8 @@ search.addEventListener('input', () => {
             Idade: ${country[2].idade}<br>
             Pais: ${country[2].pais}<br>
             Nacionalidade: ${country[2].nacionalidade}<br>
-            Codigo De Lingua: ${country[2].id}
+            Codigo De Lingua: ${country[2].id}<br>
+            Continente: ${country[2].continente}
         `;
     }
     else if(search.value == country[3].nome || search.value == country[3].pais){//Beatriz
@@ -110,7 +121,8 @@ search.addEventListener('input', () => {
             idade: ${country[3].idade}<br>
             Pais: ${country[3].pais}<br>
             Nacionalidade: ${country[3].nacionalidade}<br>
-            Codigo De Pais: ${country[3].id}
+            Codigo De Pais: ${country[3].id}<br>
+            Continente: ${country[3].continente}
         `;
     }
     else if(search.value == country[4].nome || search.value == country[4].pais){//Vando
@@ -119,7 +131,8 @@ search.addEventListener('input', () => {
             idade: ${country[4].idade}<br>
             Pais: ${country[4].pais}<br>
             Nacionalidade: ${country[4].nacionalidade}<br>
-            Codigo De Pais: ${country[4].id}
+            Codigo De Pais: ${country[4].id}<br>
+            Continente: ${country[4].continente}
         `;
     }
     else if(search.value == country[5].nome || search.value == country[5].pais) {//carlos
@@ -128,7 +141,8 @@ search.addEventListener('input', () => {
             Idade: ${country[5].idade}<br>
             Pais: ${country[5].pais}<br>
             Nacionalidade: ${country[5].nacionalidade}<br>
-            Codigo De Pais: ${country[5].id}
+            Codigo De Pais: ${country[5].id}<br>
+            Continente: ${country[5].continente}
         `;
     }
     else if (search.value == "word" || search.value == "comandos") {
